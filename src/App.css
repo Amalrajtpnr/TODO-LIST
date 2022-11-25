@@ -6,6 +6,9 @@
   align-items: center;
   justify-content: center;
   background-color: hsl(218, 44%, 22%);
+  background-image: url("./assets/landscape.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card {
