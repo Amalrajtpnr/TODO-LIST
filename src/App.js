@@ -12,6 +12,7 @@ function App() {
         <h1 className="title">TODO LIST</h1>
         <div className="input">
           <input
+            value={value}
             onChange={(event) => {
               setvalue(event.target.value);
             }}
@@ -20,7 +21,10 @@ function App() {
           />
           <button
             onClick={() => {
-              setTodo([...todo, value]);
+              if (value !== "") {
+                setTodo([...todo, value]);
+                setvalue("");
+              }
             }}
             className="add"
           >
